@@ -1,5 +1,30 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to my web page. It's a big work in progress now. Check back in a bit! 
+  h1 Welcome to #{title}
+  hr
+  h3 About me
+  ul
+    li 
+      a(href='/about') About me
+    li 
+      a(href='/contact') Contact me
+    li 
+      a(href='resume.pdf') Resume
+    li 
+      a(href='https://github.com/Adama94') Github
+    
+  hr
+  h3 Projects
+  ul
+    li 
+      a(href='/229') CS229 class project
+    li 
+      a(href='/224w') CS224W class project
+    li 
+      a(href='/221') CS221 class project
+    li 
+      a(href='/dowjones') Dow Jones
+    li 
+      span More to come!  
+  hr

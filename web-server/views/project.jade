@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  if pdf && linkToCode
+    p A pdf writeup can be found #[a(href=pdf) here] and the code to the project is #[a(href=linkToCode) here]. 
+  else if pdf
+    p A pdf writeup can be found #[a(href=pdf) here], but unfortunately the code isn't available.
+  else if linkToCode
+    p The code to the project can be found #[a(href=linkToCode) here] with a brief description below. 
+  else
+    p Unfortunately there is no code or writeup for this project, so it's probably just an idea at this point!
+  h2 Description
+  p #{description}

@@ -22,11 +22,11 @@ router.get('/229', function(req, res, next) {
 });
 
 router.get('/224w', function(req, res, next) {
-  res.render('project', {title: 'CS224W Class Project (Social Network Analysis)', pdf: 'CS224w.pdf', linkToCode: 'https://github.com/ethanyishchan/siliconvalleyanalysis', description: contents.cs224w});
+  res.render('project', {title: 'CS224W Class Project (Social Network Analysis)', pdf: 'CS224W.pdf', linkToCode: 'https://github.com/ethanyishchan/siliconvalleyanalysis', description: contents.cs224w});
 });
 
 router.get('/221', function(req, res, next) {
-  res.render('project', {title: 'CS221 (Intro to Artifical Intelligence)', linkToCode: 'https://github.com/Adama94/fantasy-football', description: contents.cs221});
+  res.render('project', {title: 'CS221 (Intro to Artifical Intelligence)', pdf: 'CS221.pdf', linkToCode: 'https://github.com/Adama94/fantasy-football', description: contents.cs221});
 });
 
 router.get('/DowJones', function(req, res, next) {
